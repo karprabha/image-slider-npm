@@ -1,0 +1,82 @@
+.slider {
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    position: absolute;
+    transition: transform 500ms ease-in-out;
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn-nav {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn-prev {
+    left: 5%;
+}
+
+.btn-next {
+    right: 5%;
+}
+
+.bottom-nav-dots-container {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 100px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.btn-nav-dots {
+    height: 9px;
+    width: 9px;
+    border: none;
+    border-radius: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    opacity: .3;
+    cursor: pointer;
+}
+
+.bottom-nav-dots {
+    flex-basis: 12px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.btn-selected-dot>button {
+    background-color: white;
+    height: 12px;
+    width: 12px;
+    opacity: .7;
+}

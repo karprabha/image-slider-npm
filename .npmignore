@@ -1,0 +1,21 @@
+#source directories
+src/
+
+# Dependency directories
+node_modules/
+
+#linters
+.eslintrc*
+.eslintignore
+
+#git
+.gitignore
+
+#prettier
+.prettierrc.json
+.prettierignore
+
+#webpack
+webpack.common.js
+webpack.dev.js
+webpack.prod.js

@@ -1,0 +1,31 @@
+{
+    "name": "@karprabha/image-slider",
+    "version": "1.0.0",
+    "description": "image-slider",
+    "main": "dist/image-slider.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "webpack --watch",
+        "start": "set \"BROWSER=none\" && start chrome http://localhost:8080 -incognito && webpack serve --config webpack.dev.js",
+        "prepublish": "npm run build",
+        "build": "webpack --config webpack.prod.js"
+    },
+    "author": "Prabhakar Yadav",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.22.1",
+        "babel-loader": "^9.1.2",
+        "css-loader": "^6.8.1",
+        "eslint": "^8.42.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.27.5",
+        "html-webpack-plugin": "^5.5.1",
+        "prettier": "2.8.8",
+        "style-loader": "^3.3.3",
+        "webpack": "^5.85.1",
+        "webpack-cli": "^5.1.3",
+        "webpack-dev-server": "^4.15.0",
+        "webpack-merge": "^5.9.0"
+    }
+}
